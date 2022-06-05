@@ -1,0 +1,7 @@
+# Jenkins 2.350
+
+heroku create -a $APP_NAME
+heroku git:remote -a $APP_NAME
+git push heroku main
+
+heroku logs --app $APP_NAME
